@@ -1,26 +1,83 @@
-body {
-    margin: 0%;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-h1 {
-    text-align: center;
-    background-color: lightslategray;
-    margin-top: 0%;
+
+nav {
+    display: none;
 }
 
-.results {
+nav img{
+    display: none;
+}
+#hamburger-menuu{
+    display: none;
+}
+#hamburger-menuu:checked ~ nav {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
+    flex-direction: column;
+    position: relative;
+    z-index: 99999;
+    justify-content: start;
+    align-items: center;
 }
 
-.result {
-    margin: 1rem;
-    padding 1rem;
-    max-width: 300px;
-    border: 1px solid gray;
-    border-radius: 1rem;
-    padding: 5px;
-    order: 3;
+#hamburger_label{
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 30px; 
+    position: sticky;
+    align-self: center;
+}
+
+nav ul li{
+    display: block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+nav ul li a{
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li{
+    padding: 20px;
+    background-color:black;
+    width: 100%;
+}
+
+
+
+input {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px;
+    box-sizing: border-box;
+}
+
+#contactForm{
+    text-align: center;
+    background-color: rgb(223, 223, 223);
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+button{
+    margin-top: 40px;
+    padding: 10px;
+    border-radius: 20%;
+    background-color: green;
+    color: white;
+}
+
+.form_error_name, .form_error_subject, .form_error_email, .form_error_address{
+    display: none;
+    color: red;
 }

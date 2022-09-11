@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <script src="https://kit.fontawesome.com/8d4272ce0c.js" crossorigin="anonymous"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JavaScript 1 - Course assignment</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<section class="header">
+
+    <label id="hamburger_label" for="hamburger-menuu"><i class="fa-solid fa-bars"></i> </label>
+
+    <input type="checkbox" id="hamburger-menuu">
+
+    <nav> 
+
+        <ul class="ul-links"></ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="deta">Detals</a></li>
+            <li><a href="contact.html">Contact</a></li> 
+        </ul>
+
+    </nav>
+
+</section> 
+
+<section class="section_form">
+    <form id="contactForm">
+
+        <div> 
+            <label>
+                Name (required)
+                <input name="firstname" id="firstName" placeholder="Name">
+            </label> 
+                <div class="form_error_name" id="firstNameError"> Please enter a valid name </div>
+        </div>
+
+        <div> 
+            <label> 
+                Subject (minimum 10 words)
+                <input name="Subject" id="Subject" placeholder="Subject">    
+            </label>
+                <div class="form_error_subject"> Please enter a valid subject </div>
+        </div>
+ 
+        <div>
+            <label> 
+            Must be an email
+                <input name="email" id="email" placeholder="Email">
+            </label>
+                <div class="form_error_email"> Please enter a valid email </div>
+        </div> 
+
+        <div> 
+            <label>
+                Min length 25 (required)
+            <input name="address" id="address" placeholder="Address">
+            <div class="form_error_address"> Please enter a valid address </div>
+        </div>
+
+        <button>Submit</button>
+
+    </form>
+</section>
+
+<script src="js/contact.js"></script>
+
+</body>
+</html>
